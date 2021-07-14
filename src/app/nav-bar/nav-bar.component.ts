@@ -9,6 +9,8 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
   ngOnInit(): void {
+    this.scrollToHome();
+
   }
   scrollToHome(){
     window.scrollTo({top: 0, behavior: 'smooth'});
@@ -24,13 +26,13 @@ export class NavBarComponent implements OnInit {
     var scrollDiv = document.getElementById("comparision");
     let scroll;
     scrollDiv !== null ? scroll = scrollDiv.offsetTop : '';
-    window.scrollTo({ top: scroll, behavior: 'smooth'});  
+    window.scrollTo({ top: scroll, behavior: 'smooth'});
   }
   scrollToList(){
     var scrollDiv = document.getElementById("list");
     let scroll;
     scrollDiv !== null ? scroll = scrollDiv.offsetTop : '';
-    window.scrollTo({ top: scroll, behavior: 'smooth'});  
+    window.scrollTo({ top: scroll, behavior: 'smooth'});
   }
 
 }

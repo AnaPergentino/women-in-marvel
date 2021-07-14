@@ -16,9 +16,14 @@ Project is created with:
 * [Marvel API](https://developer.marvel.com/) 
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project, just run npm start. It wil execute npm install && ng serve
+```
+$ npm  start
+```
+
+or, install it locally using npm:
 
 ```
 $ npm install
-$ npm start
+$ ng serve
 ```
