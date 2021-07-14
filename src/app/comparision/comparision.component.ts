@@ -93,9 +93,7 @@ displayedColumns = ['name', 'comics', 'events', 'series', 'stories'];
       this.xMenMenCharacters = this.localStorage.get('xMenMaleCharacters')
       this.calculateSubtypeAndPushToArray(this.xMenMenCharacters, this.xMenMen);
       this.calculateSum(this.xMenMenTotals, this.xMenMen)
-
       this.setDataSource(this.dataSourceXmenMen, this.xMenMen);
-      console.log("nao chama o servico", this.xMenMen)
 
     }
     else {
@@ -110,7 +108,6 @@ displayedColumns = ['name', 'comics', 'events', 'series', 'stories'];
           this.calculateSubtypeAndPushToArray(this.xMenMenCharacters, this.xMenMen);
           this.calculateSum(this.xMenMenTotals, this.xMenMen)
 
-          console.log("chama o servico", this.xMenMen)
         }
       )
     }
