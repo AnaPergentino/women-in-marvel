@@ -11,8 +11,9 @@ The project emerged as a job application challenge. Using a Marvel API, the proj
 	
 ## Technologies
 Project is created with:
-* [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
+* [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9
 * [Angular Material](https://material.angular.io/) version 11.2.13
+* [Node.js](https://nodejs.org/en/) version 15.14.0
 * [Marvel API](https://developer.marvel.com/) 
 	
 ## Setup
