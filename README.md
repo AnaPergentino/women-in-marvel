@@ -1,4 +1,4 @@
-# DesafioMarvel
+# Women in Marvel
 
 
 ## Table of contents
@@ -18,7 +18,7 @@ Project is created with:
 ## Setup
 To run this project, just run npm start. It wil execute npm install && ng serve
 ```
-$ npm  start
+$ npm start
 ```
 
 or, install it locally using npm:

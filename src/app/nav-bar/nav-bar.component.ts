@@ -9,7 +9,7 @@ export class NavBarComponent implements OnInit {
 
   constructor() { }
   ngOnInit(): void {
-    this.scrollToHome();
+    this.scrollToHome()
 
   }
   scrollToHome(){
