@@ -1,0 +1,16 @@
+.nav-bar{
+    position: fixed;
+    right:20px;
+    top:20px;
+    background-color: rgba(31, 29, 29, 0.1) ;
+    z-index:999;
+
+}
+button {
+    color: red;
+    font-size: 1.0rem;
+    align-items: center;
+    text-align: center;
+    font: roboto;
+
+}

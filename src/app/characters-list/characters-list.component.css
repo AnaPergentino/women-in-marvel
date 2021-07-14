@@ -1,0 +1,95 @@
+img {
+    border: 2px solid #C0C0C0;
+    padding: 5px;
+    width: 100px;
+}
+
+a {
+    color: #f3f3f3
+}
+
+table {
+    width: 100%;
+}
+
+tr.example-detail-row {
+    height: 0;
+}
+
+tr.example-character-row:not(.example-expanded-row):hover {
+    background: whitesmoke;
+}
+
+tr.example-character-row:not(.example-expanded-row):active {
+    background: #efefef;
+}
+
+.example-character-row td {
+    border-bottom-width: 0;
+}
+
+.example-character-detail {
+    overflow: hidden;
+    display: flex;
+}
+
+.example-character-diagram {
+    min-width: 80px;
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+}
+
+.example-character-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+}
+
+.example-character-description {
+    padding: 16px;
+}
+
+.example-character-description-attribution {
+    opacity: 0.5;
+}
+
+th {
+    font-size: medium;
+}
+
+.parent-element-class ::ng-deep .mat-progress-spinner circle,
+.parent-element-class .mat-spinner circle {
+    stroke: black;
+}
+
+.list {
+    height: 590vh;
+    background-color: black;
+    left: 0px;
+    position: relative;
+}
+
+.header {
+    overflow: visible;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 20vh;
+    position: absolute;
+    top: 0;
+}
+
+h1 {
+    font-size: 2.0rem;
+    font-weight: bolder;
+}
+
+.table-wrapper {
+    position: absolute;
+    margin: 10vh;
+    margin-top: 30vh;
+}

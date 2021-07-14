@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap');
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+    background: linear-gradient(110deg, white 60%, black 60%);
+    background-attachment: fixed;
+    height: 100%;
+}
+
+
+/* Application-wide Styles */
+
+h1 {
+    color: #EA222E;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+h2,
+h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+p {
+    color: #EA222E;
+}
+
+body,
+input[type="text"],
+button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+}
+
+
+/* everywhere else */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+    stroke: #EA222E;
+}
+
+.mat-progress-spinner {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-top: 40vh;
+}

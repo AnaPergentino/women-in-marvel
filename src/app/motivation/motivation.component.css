@@ -1,0 +1,45 @@
+.motivation{
+    height:100vh;
+    background-color: black;
+    left:0px;
+    position: relative;
+    z-index: -1;
+}
+.header{
+    overflow: visible;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+    margin-top:20vh;
+    position: absolute;
+}
+h1{
+    font-size: 2.0rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px #ffffff;
+
+}
+.text{
+    overflow: visible;
+    text-align: justify;
+    font-size: 1.0rem;
+    width: 40%;
+    height: 100%;
+    margin-top:40vh;
+    margin-left: 15vw;
+    position: absolute;
+}
+p{
+    color: #ffffff;
+    font-weight: bold;
+}
+.women-comic-cover img{
+    text-align: justify;
+    font-size: 1.0rem;
+    width: 20vw;
+    margin-top:30vh;
+    margin-right: 15vw;
+    margin-left: 60vw;
+    position: absolute;
+}

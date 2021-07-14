@@ -1,0 +1,199 @@
+<div class="comparision">
+  <div class="header">
+    <h1 class="title">Women x Men</h1>
+  </div>
+  <div class="content" *ngIf="ready">
+    <div class="x-men">
+
+    <div>
+      <h2 class="title">X-Men Characters</h2>
+    </div>
+        <mat-grid-list cols="2">
+        <mat-grid-tile>
+          <table mat-table [dataSource]="dataSourceXmenWomen" class="mat-elevation-z8" id="women">
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let character">{{ character.name }}</td>
+              <td mat-footer-cell *matFooterCellDef> Total </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="comics">
+              <th mat-header-cell *matHeaderCellDef>Comics</th>
+              <td mat-cell *matCellDef="let character">{{ character.comics }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenWomenTotals.comics}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="series">
+              <th mat-header-cell *matHeaderCellDef>Series</th>
+              <td mat-cell *matCellDef="let character">{{ character.series }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenWomenTotals.series}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="events">
+              <th mat-header-cell *matHeaderCellDef>Events</th>
+              <td mat-cell *matCellDef="let character">{{ character.events }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenWomenTotals.events}} </td>
+
+            </ng-container>
+            <ng-container matColumnDef="stories">
+              <th mat-header-cell *matHeaderCellDef>Stories</th>
+              <td mat-cell *matCellDef="let character">
+                {{ character.stories }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenWomenTotals.stories}} </td>
+
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+              <tr mat-footer-row id ="footer-women" *matFooterRowDef="displayedColumns"></tr>
+
+          </table>
+        </mat-grid-tile>
+        <mat-grid-tile>
+
+          <table mat-table [dataSource]="dataSourceXmenMen" class="mat-elevation-z8" id="men">
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let character">{{ character.name }}</td>
+                        <td mat-footer-cell *matFooterCellDef> Total </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="comics">
+              <th mat-header-cell *matHeaderCellDef>Comics</th>
+              <td mat-cell *matCellDef="let character">{{ character.comics }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenMenTotals.comics}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="series">
+              <th mat-header-cell *matHeaderCellDef>Series</th>
+              <td mat-cell *matCellDef="let character">{{ character.series }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenMenTotals.series}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="events">
+              <th mat-header-cell *matHeaderCellDef>Events</th>
+              <td mat-cell *matCellDef="let character">{{ character.events }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenMenTotals.events}} </td>
+
+            </ng-container>
+            <ng-container matColumnDef="stories">
+              <th mat-header-cell *matHeaderCellDef>Stories</th>
+              <td mat-cell *matCellDef="let character">
+                {{ character.stories }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef> {{xMenMenTotals.stories}} </td>
+
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+              <tr mat-footer-row id ="footer-men" *matFooterRowDef="displayedColumns"></tr>
+          </table>
+        </mat-grid-tile>
+      </mat-grid-list>
+      </div>
+      <br><br>
+      <div class="spider-man">
+      <div>
+      <h2 >SpiderMen Characters</h2>
+    </div>
+        <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          <table mat-table [dataSource]="dataSourceSpiderManWomen" class="mat-elevation-z8" id="women">
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let character">{{ character.name }}</td>
+              <td mat-footer-cell *matFooterCellDef> Total </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="comics">
+              <th mat-header-cell *matHeaderCellDef>Comics</th>
+              <td mat-cell *matCellDef="let character">{{ character.comics }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManWomenTotals.comics}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="series">
+              <th mat-header-cell *matHeaderCellDef>Series</th>
+              <td mat-cell *matCellDef="let character">{{ character.series }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManWomenTotals.series}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="events">
+              <th mat-header-cell *matHeaderCellDef>Events</th>
+              <td mat-cell *matCellDef="let character">{{ character.events }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManWomenTotals.events}} </td>
+
+            </ng-container>
+            <ng-container matColumnDef="stories">
+              <th mat-header-cell *matHeaderCellDef>Stories</th>
+              <td mat-cell *matCellDef="let character">
+                {{ character.stories }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManWomenTotals.stories}} </td>
+
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+              <tr mat-footer-row id ="footer-women" *matFooterRowDef="displayedColumns"></tr>
+
+          </table>
+        </mat-grid-tile>
+        <mat-grid-tile>
+
+          <table mat-table [dataSource]="dataSourceSpiderManMen" class="mat-elevation-z8" id="men">
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>Name</th>
+              <td mat-cell *matCellDef="let character">{{ character.name }}</td>
+                        <td mat-footer-cell *matFooterCellDef> Total </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="comics">
+              <th mat-header-cell *matHeaderCellDef>Comics</th>
+              <td mat-cell *matCellDef="let character">{{ character.comics }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManMenTotals.comics}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="series">
+              <th mat-header-cell *matHeaderCellDef>Series</th>
+              <td mat-cell *matCellDef="let character">{{ character.series }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManMenTotals.series}} </td>
+
+            </ng-container>
+
+            <ng-container matColumnDef="events">
+              <th mat-header-cell *matHeaderCellDef>Events</th>
+              <td mat-cell *matCellDef="let character">{{ character.events }}</td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManMenTotals.events}} </td>
+
+            </ng-container>
+            <ng-container matColumnDef="stories">
+              <th mat-header-cell *matHeaderCellDef>Stories</th>
+              <td mat-cell *matCellDef="let character">
+                {{ character.stories }}
+              </td>
+              <td mat-footer-cell *matFooterCellDef> {{spiderManMenTotals.stories}} </td>
+
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+              <tr mat-footer-row id ="footer-men" *matFooterRowDef="displayedColumns"></tr>
+          </table>
+        </mat-grid-tile>
+      </mat-grid-list>
+      </div>
+    </div>
+</div>
