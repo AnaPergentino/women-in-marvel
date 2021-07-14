@@ -21,14 +21,11 @@ export class CharactersListComponent implements OnInit {
   columnsToDisplay = ['Name', 'Comics', 'Events', 'Series', 'Stories'];
   expandedElement: ICharacters | null | undefined;
   CHARACTER_DATA: ICharacters[] = [];
-  totals: ITotals = { comics: 0, events: 0, series: 0, stories: 0 }
   dataSource = [...this.CHARACTER_DATA];
   loaded = false;
 
   ngOnInit(): void {
     this.getFemaleCharacters();
-    this.calculateSum()
-    console.log(this.totals)
     this.setLoaded();
   }
 
@@ -43,17 +40,5 @@ export class CharactersListComponent implements OnInit {
   containsThumbnail(path: string) {
     return !path.includes('image_not_available');
   }
-  calculateSum() {
-    if (this.dataSource)
-      for (let character of this.dataSource) {
-        this.incrementTotal(character);
-      }
-    }
 
-  incrementTotal(character: ICharacters) {
-    this.totals.comics += character.comics.available;
-    this.totals.events += character.events.available;
-    this.totals.series += character.series.available;
-    this.totals.stories += character.stories.available;
-  }
 }

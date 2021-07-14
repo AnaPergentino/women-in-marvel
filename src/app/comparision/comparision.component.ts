@@ -74,9 +74,7 @@ displayedColumns = ['name', 'comics', 'events', 'series', 'stories'];
     this.getSpiderManWomen()
     this.getSpiderManMen()
     this.calculateSum(this.xMenWomenTotals, this.xMenWomen)
-    this.calculateSum(this.xMenMenTotals, this.xMenMen)
     this.calculateSum(this.spiderManWomenTotals, this.spiderManWomen)
-    this.calculateSum(this.spiderManMenTotals, this.spiderManMen)
   }
   getXmenWomen() {
     this.service.femaleCharacters.filter(character => {
@@ -94,8 +92,11 @@ displayedColumns = ['name', 'comics', 'events', 'series', 'stories'];
     if (Object.keys(this.localStorage.get('xMenMaleCharacters')).length != 0) {
       this.xMenMenCharacters = this.localStorage.get('xMenMaleCharacters')
       this.calculateSubtypeAndPushToArray(this.xMenMenCharacters, this.xMenMen);
+      this.calculateSum(this.xMenMenTotals, this.xMenMen)
+
       this.setDataSource(this.dataSourceXmenMen, this.xMenMen);
-      this.ready=true;
+      console.log("nao chama o servico", this.xMenMen)
+
     }
     else {
       this.service.requestDataFromMultipleSources(this.xMenMen).toPromise().then(
@@ -107,6 +108,9 @@ displayedColumns = ['name', 'comics', 'events', 'series', 'stories'];
           }
           this.localStorage.set('xMenMaleCharacters', this.xMenMenCharacters)
           this.calculateSubtypeAndPushToArray(this.xMenMenCharacters, this.xMenMen);
+          this.calculateSum(this.xMenMenTotals, this.xMenMen)
+
+          console.log("chama o servico", this.xMenMen)
         }
       )
     }
@@ -129,9 +133,9 @@ getSpiderManMen() {
   if (Object.keys(this.localStorage.get('spiderManMaleCharacters')).length != 0) {
     this.spiderManMenCharacters = this.localStorage.get('spiderManMaleCharacters')
     this.calculateSubtypeAndPushToArray(this.spiderManMenCharacters, this.spiderManMen);
+    this.calculateSum(this.spiderManMenTotals, this.spiderManMen)
 
     this.setDataSource(this.dataSourceSpiderManMen, this.spiderManMen);
-    this.ready=true;
   }
   else {
     this.service.requestDataFromMultipleSources(this.spiderManMen).toPromise().then(
@@ -143,6 +147,8 @@ getSpiderManMen() {
         }
         this.localStorage.set('spiderManMaleCharacters', this.spiderManMenCharacters)
         this.calculateSubtypeAndPushToArray(this.spiderManMenCharacters, this.spiderManMen);
+        this.calculateSum(this.spiderManMenTotals, this.spiderManMen)
+
       }
     )
   }
