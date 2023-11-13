@@ -10,8 +10,8 @@
 The project emerged as a job application challenge. Using a Marvel API, the project retrieves information from Marvel characters in order to show the main female characters, in addition to having a comparison between their appearance and Marvel male characters
 The project emerged as a job application challenge. Utilizing the Marvel API, this project retrieves information from Marvel characters to conduct a comparison between the number of appearances of female and male characters.
 
-![First Page](https://github.com/AnaPergentino/women-in-marvel/tree/master/screenshots/women-in-marvel-screenshot-home.png) 
-![Comparison](https://github.com/AnaPergentino/women-in-marvel/tree/master/screenshots/women-in-marvel-screenshot-comparison-table.png) 
+![First Page](https://github.com/AnaPergentino/women-in-marvel/blob/master/screenshots/women-in-marvel-screenshot-home.png) 
+![Comparison](https://github.com/AnaPergentino/women-in-marvel/blob/master/screenshots/women-in-marvel-screenshot-comparison-table.png) 
 
 ## Technologies
 Project is created with:
